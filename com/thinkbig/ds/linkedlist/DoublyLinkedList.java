@@ -1,7 +1,5 @@
 package com.thinkbig.ds.linkedlist;
 
-import com.thinkbig.ds.linkedlist.SingleLinkedList.Node;
-
 public class DoublyLinkedList {
 	
 	Node root = null;
