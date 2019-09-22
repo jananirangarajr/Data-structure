@@ -69,6 +69,8 @@ class BST{
 				return null;
 			else if(node.left != null || node.right != null)
 			{
+				/* *** Inorder successor or Inorder Predecessor of a deleted node will be replaced always *** */ 
+				// when left null find the minimum value at right and replace node's data
 				if(node.left == null)
 				{
 					Node minRightNode = findRightMin(node.right);
@@ -76,6 +78,7 @@ class BST{
 					node = delete(node,minRightNode.data);
 					node.data = minRightNodeData;
 				}
+				// when left is not null find the maximum value at left and replace node's data
 				else
 				{
 					Node maxLeftNode = findLeftMax(node.left);
