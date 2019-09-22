@@ -1,6 +1,6 @@
 package com.thinkbig.ds.linkedlist;
 
-public class SingleLinkedList {
+class SingleLinkedList {
 	
 	Node root = null;
 	class Node{
