@@ -47,6 +47,21 @@ public class LinkedListImpl {
 		circular.delete(7);
 		circular.delete(15);
 		circular.display();
+		System.out.println("--- Circular Linked List ----");
+		CircularImpl circularImpl = new CircularImpl();
+		circularImpl.add(10);
+		circularImpl.add(3);
+		circularImpl.add(5);
+		circularImpl.add(13);
+		circularImpl.add(15);
+		circularImpl.add(17);
+		circularImpl.add(7);
+		circularImpl.display();
+		circularImpl.delete(3);
+		circularImpl.delete(10);
+		circularImpl.delete(7);
+		circularImpl.delete(15);
+		circularImpl.display();
 	}
 
 }
