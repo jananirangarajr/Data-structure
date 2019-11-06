@@ -13,7 +13,7 @@ class Queue{
 	Queue() {
 		// TODO Auto-generated constructor stub
 	}
-	void enque(int number)
+	void enqueue(int number)
 	{
 		Queue node = new Queue(number);
 		if(this.front == null & this.rear == null)
@@ -27,7 +27,7 @@ class Queue{
 		}
 		
 	}
-	void deque()
+	void dequeue()
 	{
 		Queue node = this.front;
 		if(this.front == null && this.rear == null)
@@ -62,21 +62,21 @@ public class QueueImpl {
 	public static void main(String args[])
 	{
 		Queue queue = new Queue();
-		queue.enque(1);
-		queue.enque(2);
-		queue.enque(3);
+		queue.enqueue(1);
+		queue.enqueue(2);
+		queue.enqueue(3);
 		System.out.println("Enque");
 		queue.display();
-		queue.deque();
+		queue.dequeue();
 		System.out.println("Deque");
 		queue.display();
-		queue.deque();
+		queue.dequeue();
 		System.out.println("Deque");
 		queue.display();
-		queue.deque();
+		queue.dequeue();
 		System.out.println("Deque");
 		queue.display();
-		queue.deque();
+		queue.dequeue();
 		System.out.println("Deque");
 		queue.display();
 		
