@@ -125,6 +125,12 @@ public class BinaryHeapImpl {
 			{
 				heap.createMinHeap();
 				heap.display();
+				heap.delete();// either minheap or mapHeap delete -- here delete method implemented for minheap
+				heap.display();
+				heap.delete();
+				heap.display();
+				heap.delete();
+				heap.display();
 			}
 			else if(option.equalsIgnoreCase("MaxHeap"))
 			{
@@ -135,12 +141,6 @@ public class BinaryHeapImpl {
 			{
 				System.out.println("Enter a valid option");
 			}
-			heap.delete();
-			heap.display();
-			heap.delete();
-			heap.display();
-			heap.delete();
-			heap.display();
 		} catch (NumberFormatException | IOException e) {
 			// TODO Auto-generated catch block 
 			e.printStackTrace();

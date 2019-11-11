@@ -23,7 +23,11 @@ public class HeapSort {
 			{
 				heap.delete();
 			}
-			heap.display();
+			System.out.println("Elements after heap sort");
+			for(int i = size-1 ; i >=0 ; i--)
+			{
+				System.out.println(heap.heapArray[i]);
+			}
 			
 		} catch (NumberFormatException | IOException e) {
 			// TODO Auto-generated catch block 
