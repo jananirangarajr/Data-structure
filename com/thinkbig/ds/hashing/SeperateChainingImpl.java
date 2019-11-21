@@ -52,6 +52,23 @@ class SeperateChaining {
 			parent = parent.node;
 		}
 	}
+	public void searchElement(int element) {
+		// TODO Auto-generated method stub
+		int index = calculateIndex(element);
+		Node parent = hashArray[index];
+		while(parent.element != element && parent.node != null)
+		{
+			parent = parent.node;
+		}
+		if(parent.element == element)
+		{
+			System.out.println("Element found");
+		}
+		else
+		{
+			System.out.println("Element Not Found");
+		}
+	}
 }
 
 public class SeperateChainingImpl {
@@ -65,11 +82,12 @@ public class SeperateChainingImpl {
 			hashing.createNode(number);
 			System.out.println("Continue Y/N");
 			String option = sc.next();
-			if(option.equalsIgnoreCase("Y"))
-				continue;
-			else 
+			if(!option.equalsIgnoreCase("Y"))
 				break;
 		}
 		hashing.display(0);
+		System.out.println("Enter the element to search");
+		int element = sc.nextInt();
+		hashing.searchElement(element);
 	}
 }
