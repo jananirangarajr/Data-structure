@@ -59,8 +59,11 @@ class DFS {
 		}
 		else
 		{
-			
-			stack.push(startingVertex);
+			if(visited[startingVertex] != 1) 
+			{
+				stack.push(startingVertex);
+				System.out.print(" "+startingVertex);
+			}
 			for(int i = 0 ; i < graphMatrix.length ; i++)
 			{
 				if(graphMatrix[startingVertex][i] == 1 && !stack.contains(i) && visited[i] != 1)
@@ -68,9 +71,7 @@ class DFS {
 					traversal(i);
 				}
 			}
-			int visit = stack.pop();
-			visited[visit] = 1;
-			System.out.print(" "+visit);	
+			stack.pop();	
 		}
 	}		
 }
