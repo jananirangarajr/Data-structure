@@ -3,12 +3,14 @@ package com.thinkbig.ds.graphs;
 import java.util.Scanner;
 
 public class MatrixRepresentation {
+	
+	static int[][] graphMatrix;
 	public static void main(String args[])
 	{
 		System.out.println("Enter Number of Nodes ");
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
-		int graphMatrix[][] = new int[size][size];
+		graphMatrix = new int[size][size];
 		System.out.println("Enter the edjes in 0/1");
 		for(int i = 0 ; i < size; i++)
 		{
@@ -20,6 +22,10 @@ public class MatrixRepresentation {
 		}
 		MatrixRepresentation graph = new MatrixRepresentation();
 		graph.display(graphMatrix);
+	}
+	int[][] getMatrix()
+	{
+		return graphMatrix;
 	}
 	void display(int[][] graphMatrix)
 	{
