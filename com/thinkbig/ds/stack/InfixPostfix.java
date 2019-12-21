@@ -65,6 +65,8 @@ public class InfixPostfix {
 							while(!stack.isEmpty() && currentPrecedence < topPrecedence)
 							{
 								System.out.print(" "+stack.pop());
+								if(!stack.empty())
+									topPrecedence = checkPrecedence(stack.peek());
 							}
 							stack.push(c);
 						}
