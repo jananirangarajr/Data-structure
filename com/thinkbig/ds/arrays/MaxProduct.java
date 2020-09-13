@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//https://practice.geeksforgeeks.org/problems/maximum-product-of-two-numbers/0
+
 class MaxProduct {
 
 	public static void main(String[] args) {
